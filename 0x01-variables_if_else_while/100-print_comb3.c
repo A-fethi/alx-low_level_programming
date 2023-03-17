@@ -12,6 +12,7 @@ int main(void)
 	int	b;
 
 	a = 0;
+	b = 1;
 	while (a < 9)
 	{
 		while (b <= 9)
