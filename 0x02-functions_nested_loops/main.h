@@ -4,8 +4,9 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int _putchar(char c);
-int main(void);
-void print_alphabet(void);
+int 	_putchar(char c);
+int 	main(void);
+void 	print_alphabet(void);
+void 	print_alphabet_x10(void);
 
 #endif
