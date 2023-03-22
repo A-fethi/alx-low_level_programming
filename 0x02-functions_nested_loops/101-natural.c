@@ -16,7 +16,7 @@ int	main(void)
 	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
-			sum = sum + ii;
+			sum = sum + i;
 		i++;
 	}
 	printf("%d\n", sum);
