@@ -17,13 +17,13 @@ int main(void)
 	i = 1;
 	first = 0;
 	second = 1;
-	while (i <= 50)
+	while (i <= 52)
 	{
 		printf("%ld", first);
 		next = first + second;
 		first = second;
 		second = next;
-		if (i == 49)
+		if (i == 52)
 			printf("\n");
 		else
 			printf(", ");
