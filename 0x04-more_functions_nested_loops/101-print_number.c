@@ -21,4 +21,10 @@ void	print_number(int n)
 		print_number(n / 10);
 		print_number(n % 10);
 	}
+	else if (n == -2147483648)
+	{
+		_putchar('-');
+		_putchar('2');
+		print_number(147483648);
+	}
 }
