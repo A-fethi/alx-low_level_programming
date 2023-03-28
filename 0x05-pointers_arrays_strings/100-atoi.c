@@ -32,7 +32,6 @@ int    _atoi(const char *s)
 		{
 			i++;
 		}
-		
 		while ((s[i] >= '0' && s[i] <= '9'))
 		{
 			j = 1;
