@@ -9,10 +9,10 @@
 
 int    _atoi(const char *s)
 {
-	int	i;
-	int	result;
-	int	sign;
-	int	j;
+	long int	i;
+	int		result;
+	int		sign;
+	int		j;
 
 	sign = 1;
 	i = 0;
