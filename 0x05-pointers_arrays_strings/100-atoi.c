@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _atoi - Convert a string to an integer.
@@ -7,10 +7,10 @@
  * Return: A integer
  */
 
-int    _atoi(const char *s)
+int    _atoi(char *s)
 {
-	unsigned int	i;
-	int		result;
+	int		i;
+	unsigned int	result;
 	int		sign;
 	int		j;
 
