@@ -19,7 +19,7 @@ int	_if(int i, int j)
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: int that we will find the sqrt of.
- * Return: natural square root and -1 if n does not have 
+ * Return: natural square root and -1 if n does not have
  * a natural square root.
  */
 
