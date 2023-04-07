@@ -15,7 +15,6 @@ int _isdigit(int c)
 		return (0);
 }
 
-
 /**
  * main - adds positive numbers.
  * @argc: arguments count
