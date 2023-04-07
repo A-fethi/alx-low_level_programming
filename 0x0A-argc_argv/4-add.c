@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
 * _isdigit - write a function that check for a digit (0 through 9).
 * @c: char to check
@@ -25,7 +24,7 @@ int _isdigit(int c)
 int main(int argc, char *argv[])
 {
 	int	i;
-	int		sum;
+	int	sum;
 
 	i = 1;
 	sum = 0;
