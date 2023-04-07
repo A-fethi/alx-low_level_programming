@@ -30,19 +30,21 @@ int main(int argc, char *argv[])
 	sum = 0;
 	if (argc == 1)
 	{
-		printf("%d\n", 0);
-		return (0);
+		printf("0\n");
 	}
-	while (i < argc)
+	else
 	{
-		if (!_isdigit(*argv[i]))
+		while (i < argc)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (!_isdigit(*argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			sum += atoi(argv[i]);
+			i++;
 		}
-		sum += atoi(argv[i]);
-		i++;
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
 	return (0);
 }
