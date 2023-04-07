@@ -29,20 +29,20 @@ int main(int argc, char *argv[])
 	i = 1;
 	sum = 0;
 	if (argc == 1)
-		printf("%d\n", 0);
-	if (argc > 2)
 	{
-		while (i < argc)
-		{
-			if (!_isdigit(*argv[i]))
-			{
-				printf("%s\n", "Error");
-				return (1);
-			}
-			sum += atoi(argv[i]);
-			i++;
-		}
-		printf("%d\n", sum);
+		printf("%d\n", 0);
+		return (0);
 	}
+	while (i < argc)
+	{
+		if (!_isdigit(*argv[i]))
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+		i++;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
