@@ -1,5 +1,21 @@
 #include "main.h"
 
+
+/**
+* _isdigit - write a function that check for a digit (0 through 9).
+* @c: char to check
+* Return:  0 or 1
+**/
+
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
+
+
 /**
  * main - adds positive numbers.
  * @argc: arguments count
@@ -20,7 +36,7 @@ int main(int argc, char *argv[])
 	{
 		while (i < argc)
 		{
-			if (!isdigit(*argv[i]))
+			if (!_isdigit(*argv[i]))
 			{
 				printf("%s\n", "Error");
 				return (1);
