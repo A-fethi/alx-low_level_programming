@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* _isdigit - write a function that check for a digit (0 through 9).
-* @c: char to check
-* Return:  0 or 1
-**/
+ * _isdigit - a function that check for a digit (0 -> 9)
+ * @c: char to check
+ * Return: 0 or 1
+ */
 
-int _isdigit(int c)
+int	_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
@@ -29,11 +29,8 @@ int main(int argc, char *argv[])
 	i = 1;
 	sum = 0;
 	if (argc == 1)
-	{
 		printf("%d\n", 0);
-		return (0);
-	}
-	else
+	if (argc > 2)
 	{
 		while (i < argc)
 		{
