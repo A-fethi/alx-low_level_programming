@@ -1,17 +1,14 @@
 #include "main.h"
 
 /**
- * _isdigit - a function that check for a digit (0 -> 9)
+ * my_isdigit - checks for a digit
  * @c: char to check
- * Return: 0 or 1
+ * Return: 1 if true or 0 if false.
  */
 
-int	_isdigit(char c)
+int my_isdigit(char c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	return (c >= '0' && c <= '9');
 }
 
 /**
@@ -36,7 +33,7 @@ int main(int argc, char *argv[])
 	{
 		while (i < argc)
 		{
-			if (!_isdigit(*argv[i]))
+			if (!my_isdigit(*argv[i]))
 			{
 				printf("Error\n");
 				return (1);
