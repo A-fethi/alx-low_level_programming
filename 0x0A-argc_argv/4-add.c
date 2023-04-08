@@ -36,15 +36,12 @@ int main(int argc, char *argv[])
 	{
 		while (i < argc)
 		{
-			if (_isdigit(*argv[i]))
-			{
-				sum += atoi(argv[i]);
-			}
-			else
+			if (_isdigit(*argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 			i++;
 		}
 		printf("%d\n", sum);
