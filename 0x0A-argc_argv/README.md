@@ -10,3 +10,8 @@ a program that prints all arguments it receives.
 a program that multiplies two numbers.
 ## 4. To infinity and beyond
 a program that adds positive numbers.
+
+<h1> Advanced_Task </h1>
+
+## 5. Minimal Number of Coins for Change
+a program that prints the minimum number of coins to make change for an amount of money.
