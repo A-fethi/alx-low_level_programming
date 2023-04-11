@@ -33,6 +33,11 @@ char	*str_concat(char *s1, char *s2)
 	int	len2;
 	char	*space;
 
+
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 	i = 0;
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
