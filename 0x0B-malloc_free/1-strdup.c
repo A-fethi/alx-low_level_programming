@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _strdup - copies the str given as parameter to dest
  * @str: the string
@@ -15,7 +15,10 @@ char	*_strdup(char *str)
 	{
 		return (NULL);
 	}
-	dest = malloc(sizeof(char));
+	i = 0;
+	while (str[i])
+		i++;
+	dest = malloc(sizeof(char) * (i + 1));
 	if (!dest)
 		return (NULL);
 	i = 0;
@@ -24,5 +27,6 @@ char	*_strdup(char *str)
 		dest[i] = str[i];
 		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
