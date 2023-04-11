@@ -1,6 +1,24 @@
 #include "main.h"
 
 /**
+ * _strlen - return the lenght of a string
+ * @s: char to check
+ * Return: len of the string
+ */
+
+int	_strlen(char *s)
+{
+	char	*str;
+
+	str = s;
+	while (*str)
+	{
+		str++;
+	}
+	return (str - s);
+}
+
+/**
  * argstostr - concatenates all the args of the program
  * @ac: arguments count
  * @av: arguments
@@ -21,7 +39,7 @@ char	*argstostr(int ac, char **av)
 	i = 0;
 	while (i < ac)
 	{
-		len += strlen(av[i]) + 1;
+		len += _strlen(av[i]) + 1;
 		i++;
 	}
 	str = malloc(sizeof(char) * len);
