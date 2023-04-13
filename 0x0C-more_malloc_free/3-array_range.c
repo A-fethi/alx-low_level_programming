@@ -18,7 +18,7 @@ int	*array_range(int min, int max)
 	if (!space)
 		return (NULL);
 	i = 0;
-	while (i <= max)
+	while (i <= (max - min))
 	{
 		space[i] = i;
 		i++;
