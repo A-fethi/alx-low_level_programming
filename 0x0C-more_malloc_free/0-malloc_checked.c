@@ -10,7 +10,7 @@ void	*malloc_checked(unsigned int b)
 {
 	unsigned int	*space;
 
-	space = malloc(b * sizeof(unsigned int));
+	space = malloc(b);
 	if (!space)
 		exit(98);
 	return (space);
