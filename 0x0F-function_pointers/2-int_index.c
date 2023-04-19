@@ -5,7 +5,7 @@
  * @array: the array to search in
  * @size: the number of elements in the array
  * @cmp: a pointer to the function to be used to compare values
- * Return: -1 if size less than or equal 0 and if no element matches,
+ * Return: -1 if size less than or equal 0 or if no element matches,
  * index of the first element for which the cmp function does not return 0
  */
 
@@ -26,5 +26,5 @@ int	int_index(int *array, int size, int (*cmp)(int))
 		}
 		i++;
 	}
-	return (0);
+	return (-1);
 }
