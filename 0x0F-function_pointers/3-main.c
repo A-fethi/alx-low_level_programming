@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 {
 	int	a;
 	int	b;
-	int	result;
-	int	(*op_f)(int, int);
+	char	*oper;
 
 	if (argc != 4)
 	{
@@ -22,18 +21,17 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+	oper = argv[2];
+	if ((*oper == '/' || *oper == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	op_f = get_op_func(argv[2]);
-	if (!op_f || op_f == NULL)
+	if (get_op_func(oper) == NULL || oper[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	result = op_f(a, b);
-	printf("%d\n", result);
+	printf("%d\n", get_op_func(oper)(a, b));
 	return (0);
 }
