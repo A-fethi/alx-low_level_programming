@@ -36,6 +36,10 @@ void	print_all(const char * const format, ...)
 		{
 			printf("%s%f", sep, va_arg(args, double));
 		}
+		else
+		{
+			/* ignore all others char */
+		}
 		sep = ", ";
 		i++;
 	}
