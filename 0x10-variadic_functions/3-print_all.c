@@ -34,8 +34,9 @@ void	print_all(const char * const format, ...)
 			case 'f':
 				printf("%s%f", sep, va_arg(args, double));
 				break;
-			/* default: */
-				/* break; */
+			default:
+				i++;
+				continue;
 		}
 		sep = ", ";
 		i++;
