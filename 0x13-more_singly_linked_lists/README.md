@@ -25,5 +25,5 @@ a function that deletes the node at index index of a listint_t linked list.
 
 <h1> Advanced Task </h1>
 
-## 11. Reverse list
+## 11. Reverse list 
 a function that reverses a listint_t linked list.
