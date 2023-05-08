@@ -31,8 +31,8 @@ void	close_files(int pf1_err, int pf1, int pf2_err, int pf2)
 
 int main(int argc, char *argv[])
 {
-	int	pf1, pf1_err, w = 0;
-	int	pf2, pf2_err, r;
+	int	pf1, pf1_err, w;
+	int	pf2, pf2_err, r = 1024;
 	char	buff[1024];
 
 	if (argc != 3)
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		return (99);
 	}
-	while (w == 0)
+	while (r == 1024)
 	{
 		r = read(pf1, buff, 1024);
 		if (r == -1)
