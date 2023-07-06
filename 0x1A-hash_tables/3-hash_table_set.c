@@ -27,8 +27,6 @@ int	hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (new_value == NULL)
 				return (0);
 			strcpy(new_value, temp->value);
-			strcat(new_value, " ");
-			strcat(new_value, value);
 			free(temp->value);
 			temp->value = new_value;
 			return (1);
