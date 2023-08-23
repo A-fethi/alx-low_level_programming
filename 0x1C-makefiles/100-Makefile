@@ -1,4 +1,4 @@
-.PHONY: school
+.PHONY: all clean oclean fclean re
 
 CC = gcc
 
